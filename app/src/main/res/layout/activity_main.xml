@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,10 +20,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtApellidoPaterno"
+        android:id="@+id/txtFullName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Apellido Paterno"
+        android:hint="fullName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -30,18 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtId" />
 
     <EditText
-        android:id="@+id/txtApellidMaterno"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Apellido Materno"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellidoPaterno" />
-
-    <EditText
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Nombre"
@@ -49,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellidMaterno" />
+        app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
 
     <EditText
-        android:id="@+id/txtDireccion"
+        android:id="@+id/txtAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -61,20 +51,20 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
     <EditText
-        android:id="@+id/txtTelefono"
+        android:id="@+id/txtPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Telefono"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAddress" />
 
     <EditText
-        android:id="@+id/txtEdad"
+        android:id="@+id/txtAge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Edad"
@@ -82,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
 
     <Button
         android:id="@+id/btnPost"
@@ -90,7 +80,7 @@
         android:layout_height="wrap_content"
         android:text="POST"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
 
     <Button
         android:id="@+id/btnGet"
